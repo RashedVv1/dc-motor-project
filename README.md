@@ -24,7 +24,7 @@ Sweep the servo motor left and right to scan
 
 Reverse motor direction briefly, then continue the routine
 
-arduino code 
+(Arduino code)
 
 #include <Servo.h>
 
