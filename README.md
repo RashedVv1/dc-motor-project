@@ -1,27 +1,30 @@
-#Smart Robot Control with 4 DC Motors, L293D, Ultrasonic Sensor & Servo Motor
-📌 مشروع باستخدام Arduino Uno وTinkercad
-📘 وصف المشروع
-يهدف هذا المشروع إلى التحكم في أربع محركات DC باستخدام L293D Motor Driver بالإضافة إلى حساس Ultrasonic وServo Motor، وذلك لمحاكاة حركة روبوت ذكي قادر على الاستجابة للعقبات.
+🤖 Smart Robot Control using 4 DC Motors, L293D, Ultrasonic Sensor & Servo Motor
+📌 Arduino + Tinkercad Simulation Project
+📘 Project Description
+This project demonstrates how to control four DC motors using an L293D motor driver, along with an ultrasonic sensor and a servo motor, to simulate an intelligent robot that moves and responds to obstacles.
 
-🎯 الأهداف
-تحريك 4 محركات DC بترتيب معين:
+🎯 Objectives
+Control 4 DC motors with a predefined motion sequence:
 
-التقدم للأمام لمدة 30 ثانية.
+Move forward for 30 seconds
 
-الرجوع للخلف لمدة 60 ثانية.
+Move backward for 60 seconds
 
-الدوران يمين ويسار بالتناوب لمدة دقيقة.
+Alternate turning right and left for 1 minute
 
-استخدام حساس المسافة (Ultrasonic Sensor):
+Use an ultrasonic sensor to:
 
-إذا استشعر وجود جسم على بُعد أقل من 10 سم:
+Detect obstacles within a 10 cm range
 
-تتوقف المحركات.
+If an object is detected:
 
-يقوم السيرفو بالتحريك للمسح يمين ويسار.
+Stop the motors
 
-تعكس المحركات الاتجاه.
-the arduino code
+Sweep the servo motor left and right to scan
+
+Reverse motor direction briefly, then continue the routine
+
+arduino code 
 
 #include <Servo.h>
 
